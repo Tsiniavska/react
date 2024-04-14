@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  padding: 10px;
+  display: flex;
+}
+
+.link {
+  transition: var(--t-normal);
+  color: var(--c-black);
+}
+
+.link:hover {
+  color: var(--c-primary);
+}
