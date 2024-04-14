@@ -1,3 +1,6 @@
+// Base
+import { useCallback } from 'react';
+
 // Components
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
@@ -8,9 +11,9 @@ import Button from '../Button/Button';
 import styles from './Header.module.css';
 
 const Header = () => {
-  const signIn = () => {
-    console.log('Sign In');
-  };
+  const signIn = useCallback(() => console.log('Sign In'), []);
+  const signUp = useCallback(() => console.log('Sign Up'), []);
+
   return (
     <header className={styles.header}>
       <Wrapper>
@@ -19,6 +22,7 @@ const Header = () => {
           <Navigation />
           <div className={styles.buttons}>
             <Button text="Sign In" onClick={signIn} />
+            <Button text="Sign Up" whiteMode={true} onClick={signUp} />
           </div>
         </div>
       </Wrapper>

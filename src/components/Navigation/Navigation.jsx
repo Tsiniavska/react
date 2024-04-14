@@ -1,5 +1,7 @@
-// Styles
+// Base
 import cn from 'classnames';
+
+// Styles
 import styles from './Navigation.module.css';
 
 // Data

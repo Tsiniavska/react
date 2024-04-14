@@ -1,13 +1,28 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
 // Base
-// import cn from 'classnames';
+import cn from 'classnames';
 
 // Styles
 import styles from './Button.module.css';
 
-// eslint-disable-next-line react/prop-types
-const Button = ({ text = 'Default text', type = 'button', onClick }) => {
+const Button = ({
+  text = 'Default text',
+  type = 'button',
+  whiteMode,
+  bigMode,
+  onClick,
+}) => {
   return (
-    <button type={type} onClick={onClick} className={styles.button}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={cn([
+        styles.button,
+        whiteMode && styles.white,
+        bigMode && styles.big,
+      ])}
+    >
       <span>{text}</span>
     </button>
   );
