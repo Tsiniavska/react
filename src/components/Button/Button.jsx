@@ -11,6 +11,7 @@ const Button = ({
   type = 'button',
   whiteMode,
   bigMode,
+  bigWhiteMode,
   onClick,
 }) => {
   return (
@@ -21,6 +22,7 @@ const Button = ({
         styles.button,
         whiteMode && styles.white,
         bigMode && styles.big,
+        bigWhiteMode && styles.bigWhite,
       ])}
     >
       <span>{text}</span>

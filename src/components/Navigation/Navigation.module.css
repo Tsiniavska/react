@@ -3,12 +3,9 @@
   align-items: center;
 }
 
-.navigation {
+.link {
   padding: 10px;
   display: flex;
-}
-
-.link {
   transition: var(--t-normal);
   color: var(--c-black);
 }

@@ -31,3 +31,12 @@
   padding-right: 40px;
   margin-top: 20px;
 }
+
+.bigWhite {
+  margin-top: 20px;
+  padding-left: 43px;
+  padding-right: 43px;
+  background-color: var(--c-white);
+  color: var(--c-black);
+  border-color: var(--c-blue);
+}

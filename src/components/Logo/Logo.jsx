@@ -1,11 +1,14 @@
+// Base
+import { Link } from 'react-router-dom';
+
 // Styles
 import styles from './Logo.module.css';
 
 const Logo = () => {
   return (
-    <a href="#" className={styles.logo}>
+    <Link to="/" className={styles.logo}>
       <img src="/logo.png" alt="logo" />
-    </a>
+    </Link>
   );
 };
 

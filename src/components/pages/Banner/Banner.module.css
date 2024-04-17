@@ -1,6 +1,6 @@
 .banner {
   height: calc(100vh - var(--h-header));
-  display: flex;
+  display: block;
   align-items: center;
   padding-top: 70px;
   padding-bottom: 70px;
