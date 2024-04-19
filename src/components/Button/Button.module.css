@@ -12,6 +12,7 @@
   cursor: pointer;
   font-weight: 600;
   transition: var(--t-normal);
+  width: fit-content;
 }
 
 .button:hover {
@@ -39,4 +40,14 @@
   background-color: var(--c-white);
   color: var(--c-black);
   border-color: var(--c-blue);
+}
+
+.retry {
+  width: 150px;
+}
+
+.button:disabled {
+  background-color: var(--c-desabled);
+  color: var(--c-silver);
+  cursor: default;
 }

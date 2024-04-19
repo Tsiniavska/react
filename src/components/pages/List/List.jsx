@@ -3,9 +3,9 @@ import axios from 'axios';
 import { useCallback, useState, useEffect } from 'react';
 
 // Components
-import Button from '../Button/Button';
-import Wrapper from '../Wrapper/Wrapper';
-import Loading from '../Loading/Loading';
+import Button from '../../Button/Button';
+import Wrapper from '../../Wrapper/Wrapper';
+import Loading from '../../Loading/Loading';
 
 // Styles
 import styles from './List.module.css';
@@ -59,9 +59,9 @@ const List = () => {
   if (state.error) {
     return (
       <>
-        <p>{state.error}</p>;
         <Wrapper>
-          <Button text="Retry" bigWhiteMode={true} onClick={getList} />
+          <p className={styles.error}>{state.error}</p>
+          <Button text="Retry" design="retry" onClick={getList} />
         </Wrapper>
       </>
     );

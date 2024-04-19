@@ -14,6 +14,10 @@ const Customers = lazy(() => import('./components/pages/Customers/Customers'));
 const Pricing = lazy(() => import('./components/pages/Pricing/Pricing'));
 const Resources = lazy(() => import('./components/pages/Resources/Resources'));
 const Error = lazy(() => import('./components/pages/Error/Error'));
+const List = lazy(() => import('./components/pages/List/List'));
+const Registration = lazy(() =>
+  import('./components/pages/Registration/Registration')
+);
 
 // Element
 // eslint-disable-next-line react/prop-types
@@ -45,6 +49,14 @@ const routes = createBrowserRouter([
       {
         path: '/resources',
         element: <Element component={<Resources />} />,
+      },
+      {
+        path: '/registration',
+        element: <Element component={<Registration />} />,
+      },
+      {
+        path: '/list',
+        element: <Element component={<List />} />,
       },
       {
         path: '*',

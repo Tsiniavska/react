@@ -1,5 +1,6 @@
 // Base
 import { useCallback } from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import Logo from '../Logo/Logo';
@@ -22,7 +23,9 @@ const Header = () => {
           <Navigation />
           <div className={styles.buttons}>
             <Button text="Sign In" onClick={signIn} />
-            <Button text="Sign Up" whiteMode={true} onClick={signUp} />
+            <Link to="/registration">
+              <Button text="Sign Up" design="white" onClick={signUp} />
+            </Link>
           </div>
         </div>
       </Wrapper>

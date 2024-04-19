@@ -1,14 +1,13 @@
 // Base
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 // Components
 import Button from '../../Button/Button';
 import Wrapper from '../../Wrapper/Wrapper';
-import List from '../../List/List';
 
 // Styles
 import styles from './Banner.module.css';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   const [count, setCount] = useState(0);
@@ -26,16 +25,20 @@ const Banner = () => {
             Tools, tutorials, design and innovation experts, all in one place!
             The most intuitive way to imagine your next user experience.
           </p>
-          <Button text="Get started" bigMode={true} onClick={add} />
-          <Link to="https://www.instagram.com/" target="_blank">
-            <Button text="Instagram" bigWhiteMode={true} />
+          <Button text="Get started" design="big" onClick={add} />
+          <Button
+            text="Instagram"
+            design="bigWhite"
+            href="https://www.instagram.com/"
+          />
+          <Link to="/list">
+            <Button text="Our partners" design="bigWhite" />
           </Link>
         </div>
         <div className={styles.image}>
           <img src="/banner.svg" alt="banner" />
         </div>
       </Wrapper>
-      <List />
     </main>
   );
 };

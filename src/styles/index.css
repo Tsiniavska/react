@@ -4,7 +4,10 @@
   --c-black: #2f281e;
   --c-black-1: #544837;
   --c-primary: #ff9900;
+  --c-desabled: #f7d9ab;
   --c-blue: #bcd0e5;
+  --c-red: #ff0000;
+  --c-silver: #adadad;
   /* Fonts */
   --f-base: 'Montserrat', sans-serif;
   --f-poppins: 'Poppins', sans-serif;
