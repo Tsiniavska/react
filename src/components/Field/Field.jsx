@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// Styles
+// * Styles
 import styles from './Field.module.css';
 
 const Field = ({

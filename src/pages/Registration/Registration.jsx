@@ -1,7 +1,7 @@
-// Components
-import RegistrationForm from '../../RegistrationForm/RegistrationForm';
+// * Components
+import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
 
-// Styles
+// * Styles
 import styles from './Registration.module.css';
 
 const Registration = () => {

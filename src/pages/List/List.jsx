@@ -1,13 +1,13 @@
-// Base
+// * Base
 import axios from 'axios';
 import { useCallback, useState, useEffect } from 'react';
 
-// Components
-import Button from '../../Button/Button';
-import Wrapper from '../../Wrapper/Wrapper';
-import Loading from '../../Loading/Loading';
+// * Components
+import Button from '../../components/Button/Button';
+import Wrapper from '../../components/Wrapper/Wrapper';
+import Loading from './../../components/Loading/Loading';
 
-// Styles
+// * Styles
 import styles from './List.module.css';
 
 const DEFAULT_STATE = {

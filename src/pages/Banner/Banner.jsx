@@ -1,11 +1,11 @@
-// Base
+// * Base
 import { useState } from 'react';
 
-// Components
-import Button from '../../Button/Button';
-import Wrapper from '../../Wrapper/Wrapper';
+// * Components
+import Button from '../../components/Button/Button';
+import Wrapper from '../../components/Wrapper/Wrapper';
 
-// Styles
+// * Styles
 import styles from './Banner.module.css';
 import { Link } from 'react-router-dom';
 

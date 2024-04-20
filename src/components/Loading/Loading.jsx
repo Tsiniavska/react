@@ -1,7 +1,7 @@
-// Components
+// * Components
 import Wrapper from '../Wrapper/Wrapper';
 
-// Styles
+// * Styles
 import styles from './Loading.module.css';
 
 const Loading = () => {

@@ -1,14 +1,14 @@
-// Base
-import { useCallback } from 'react';
+// * Base
+import { memo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
-// Components
+// * Components
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import Wrapper from '../Wrapper/Wrapper';
 import Button from '../Button/Button';
 
-//Styles
+// * Styles
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -33,4 +33,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

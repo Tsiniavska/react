@@ -1,7 +1,7 @@
-// Base
+// * Base
 import { Link } from 'react-router-dom';
 
-// Styles
+// * Styles
 import styles from './Logo.module.css';
 
 const Logo = () => {

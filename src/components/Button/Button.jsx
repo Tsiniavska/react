@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
-// Base
+// * Base
 import cn from 'classnames';
 
-// Styles
+// * Styles
 import styles from './Button.module.css';
 
 const Button = ({

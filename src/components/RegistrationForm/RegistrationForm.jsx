@@ -1,40 +1,42 @@
-// Base
+// * Base
 import { Formik } from 'formik';
 
-// Components
-import Field from './../Field/Field';
+// * Components
+import Field from '../Field/Field';
 import Button from '../Button/Button';
-import FORM from './../../../helpers/form';
+import CONFIG from './RegistrationForm.data';
 
-// Styles
+// * Styles
 import styles from './RegistrationForm.module.css';
 
-// Local constans
+// * Local constans
 const INITIAL_VALUES = { email: '', username: '', password: '', phone: '' };
 
 const RegistrationForm = () => {
   const validators = ({ email, username, password, phone }) => {
     const errors = {};
+
     if (!email) {
       errors.email = "Емейл є обов'язковий";
-    } else if (!FORM.EMAIL_REG_EXP.test(email)) {
+    } else if (!CONFIG.emailRegExp.test(email)) {
       errors.email = 'Емейл не валідний';
     }
 
     if (!username) {
       errors.username = "Ім'я є обов'язковим";
-    } else if (username.length < FORM.USERNAME_MIN_LENGTH) {
-      errors.username = `Ім'я повинно бути не менше ${FORM.USERNAME_MIN_LENGTH} символів`;
+    } else if (username.length < CONFIG.usernameMinLength) {
+      errors.username = `Ім'я повинно бути не менше ${CONFIG.usernameMinLength} символів`;
     }
 
     if (!password) {
       errors.password = "Пароль є обов'язковим";
-    } else if (password.length < FORM.PASSWORD_MIN_LENGTH) {
-      errors.password = `Пароль повинен бути не менше ${FORM.PASSWORD_MIN_LENGTH} символів`;
+    } else if (password.length < CONFIG.passwordMinLength) {
+      errors.password = `Пароль повинен бути не менше ${CONFIG.passwordMinLength} символів`;
     }
+
     if (!phone) {
       errors.phone = "Номер телефону є обов'язковим";
-    } else if (!FORM.UA_PHONE_REG_EX3.test(phone)) {
+    } else if (!CONFIG.uaPhoneRegEXx3.test(phone)) {
       errors.phone = 'Номер телефону не валідний';
     }
 

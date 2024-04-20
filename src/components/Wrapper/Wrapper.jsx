@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-// Base
+// * Base
 import cn from 'classnames';
 
-// Styles
+// * Styles
 import styles from './Wrapper.module.css';
 
 const Wrapper = ({ children, className = [] }) => {

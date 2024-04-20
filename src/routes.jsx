@@ -1,25 +1,23 @@
 /* eslint-disable react-refresh/only-export-components */
-// Base
+// * Base
 import { createBrowserRouter } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 
-// Components
+// * Components
 import App from './App';
 import Loading from './components/Loading/Loading';
 
-// Pages
-const Banner = lazy(() => import('./components/pages/Banner/Banner'));
-const Product = lazy(() => import('./components/pages/Product/Product'));
-const Customers = lazy(() => import('./components/pages/Customers/Customers'));
-const Pricing = lazy(() => import('./components/pages/Pricing/Pricing'));
-const Resources = lazy(() => import('./components/pages/Resources/Resources'));
-const Error = lazy(() => import('./components/pages/Error/Error'));
-const List = lazy(() => import('./components/pages/List/List'));
-const Registration = lazy(() =>
-  import('./components/pages/Registration/Registration')
-);
+// * Pages
+const Banner = lazy(() => import('./pages/Banner/Banner'));
+const Product = lazy(() => import('./pages/Product/Product'));
+const Customers = lazy(() => import('./pages/Customers/Customers'));
+const Pricing = lazy(() => import('./pages/Pricing/Pricing'));
+const Resources = lazy(() => import('./pages/Resources/Resources'));
+const Error = lazy(() => import('./pages/Error/Error'));
+const List = lazy(() => import('./pages/List/List'));
+const Registration = lazy(() => import('./pages/Registration/Registration'));
 
-// Element
+// * Element
 // eslint-disable-next-line react/prop-types
 const Element = ({ component }) => {
   return <Suspense fallback={<Loading />}>{component}</Suspense>;

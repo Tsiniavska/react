@@ -1,9 +1,11 @@
-// Styles
+// * Base
+import { Link } from 'react-router-dom';
+
+// * Styles
 import styles from './Navigation.module.css';
 
-// Data
+// * Data
 import LIST from './Navigation.data';
-import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
